@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSetup : MonoBehaviour
+public class PlayerSetup
 {
-    // Start is called before the first frame update
-    void Start()
+    public float playerSpeed;
+
+    public int playerInventoryMaxItens;
+
+    public PlayerSetup()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public PlayerSetup(float speed, int maxItens)
     {
-        
+        playerSpeed = speed;
+
+        playerInventoryMaxItens = maxItens;
     }
 }
