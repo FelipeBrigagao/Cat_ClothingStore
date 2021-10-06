@@ -1,22 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class PlayerSetup
 {
     public float playerSpeed;
-
-    public int playerInventoryMaxItens;
 
     public PlayerSetup()
     {
 
     }
 
-    public PlayerSetup(float speed, int maxItens)
+    public PlayerSetup(float speed)
     {
         playerSpeed = speed;
-
-        playerInventoryMaxItens = maxItens;
     }
 }

@@ -5,13 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region Variables
+    [Header("Player setup")]
     [SerializeField]
     private PlayerSetup _playerSetup;
 
+    [Header("References")]
     private Rigidbody2D _rigidbody;
 
-    private Vector2 _input;
+    private PlayerAnimation _playerAnim;
 
+    [Header("Player values")]
+    private Vector2 _input;
 
 
     #endregion
@@ -21,6 +25,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+
+        _playerAnim = GetComponent<PlayerAnimation>();
     }
 
     private void FixedUpdate()
@@ -41,7 +47,10 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        _rigidbody.velocity = _input.normalized * _playerSetup.playerSpeed;
+        _rigidbody.MovePosition(_rigidbody.position +  (_input.normalized * _playerSetup.playerSpeed * Time.fixedDeltaTime));
+
+        _playerAnim?.MovementAnimation(_input);
+
     }
 
 
