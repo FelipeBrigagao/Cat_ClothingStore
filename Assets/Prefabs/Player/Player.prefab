@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 224059887}
   - component: {fileID: 224059890}
   - component: {fileID: 224059891}
+  - component: {fileID: 7996157674427033636}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -152,7 +153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000029802322, y: 0.6346885}
+  m_Offset: {x: -0.000000029802322, y: 0.20279965}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -163,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66014296, y: 1.2922878}
+  m_Size: {x: 0.66014296, y: 0.42851}
   m_EdgeRadius: 0
 --- !u!210 &224059887
 SortingGroup:
@@ -202,6 +203,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerSetup:
     playerSpeed: 3
+--- !u!114 &7996157674427033636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995727284796494571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca967a84ce52a194696f64bca10d4878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveHorizontalParameterName: Horizontal
+  _moveVerticalParameterName: Vertical
+  _speedParameterName: Speed
 --- !u!1 &6995727285797299411
 GameObject:
   m_ObjectHideFlags: 0

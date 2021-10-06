@@ -16,6 +16,8 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField]
     private string _speedParameterName;
 
+    private float _inputMagnitude;
+
     [Header("Animation references")]
     private Animator _anim;
 
@@ -36,9 +38,16 @@ public class PlayerAnimation : MonoBehaviour
     
     public void MovementAnimation(Vector2 input)
     {
-        _anim.SetFloat(_moveHorizontalParameterName, input.x);
-        _anim.SetFloat(_moveVerticalParameterName, input.y);
-        _anim.SetFloat(_speedParameterName, input.magnitude);
+        _inputMagnitude = input.magnitude;
+
+        if(_inputMagnitude > 0)
+        {
+            _anim.SetFloat(_moveHorizontalParameterName, input.x);
+            _anim.SetFloat(_moveVerticalParameterName, input.y);
+
+        }
+
+        _anim.SetFloat(_speedParameterName, _inputMagnitude);
     }
 
 
