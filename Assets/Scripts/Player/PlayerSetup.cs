@@ -8,13 +8,18 @@ public class PlayerSetup
 {
     public float playerSpeed;
 
+    public int playerInventoryMaxSlotAmount;
+
     public PlayerSetup()
     {
 
     }
 
-    public PlayerSetup(float speed)
+    public PlayerSetup(float playerSpeed, int inventorySlots)
     {
-        playerSpeed = speed;
+        this.playerSpeed = playerSpeed;
+
+        this.playerInventoryMaxSlotAmount = inventorySlots;
+
     }
 }

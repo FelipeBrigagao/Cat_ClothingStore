@@ -6,8 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
     [Header("Player setup")]
-    [SerializeField]
-    private PlayerSetup _playerSetup;
+    private float _playerSpeed;
 
     [Header("References")]
     private Rigidbody2D _rigidbody;
@@ -40,6 +39,11 @@ public class PlayerController : MonoBehaviour
 
     #region Methods
 
+    public void SetSpeed(float walkSpeed)
+    {
+        _playerSpeed = walkSpeed;
+    }
+
     public void SetInput(Vector2 input)
     {
         _input = input;
@@ -47,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        _rigidbody.MovePosition(_rigidbody.position +  (_input.normalized * _playerSetup.playerSpeed * Time.fixedDeltaTime));
+        _rigidbody.MovePosition(_rigidbody.position +  (_input.normalized * _playerSpeed * Time.fixedDeltaTime));
 
         _playerAnim?.MovementAnimation(_input);
 
