@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopInventory : InventoryBase
 {
@@ -8,6 +9,9 @@ public class ShopInventory : InventoryBase
     [Header("Shop references")]
     [SerializeField]
     private ShopSetup _shopSetup;
+
+    [SerializeField]
+    private Text _storeName;
 
     #endregion
 
@@ -26,6 +30,7 @@ public class ShopInventory : InventoryBase
     {
         SetSlotAmount(_shopSetup.shopMaxItens);
         PopulateShopInventory();
+        _storeName.text = _shopSetup.shopName;
     }
 
     private void PopulateShopInventory()

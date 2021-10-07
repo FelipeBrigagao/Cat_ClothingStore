@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventorySlot : MonoBehaviour
+public class PlayerInventorySlot : InventorySlotBase
 {
     #region Variable
     #endregion

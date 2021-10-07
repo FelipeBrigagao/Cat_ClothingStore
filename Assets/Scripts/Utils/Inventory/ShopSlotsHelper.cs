@@ -19,13 +19,15 @@ public class ShopSlotsHelper : MonoBehaviour
     private void Awake()
     {
         slots = _slotsHolder.GetComponentsInChildren<ShopInventorySlot>();
+        _shopInventory = this.GetComponentInParent<ShopInventory>();
+        SetShopInventorySlotReferences();
     }
 
     #endregion
 
     #region Methods
 
-    private void SetShopInventorySlotreferences()
+    private void SetShopInventorySlotReferences()
     {
         foreach(ShopInventorySlot slot in slots)
         {
