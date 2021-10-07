@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlotBase : MonoBehaviour
 {
     #region Variables
     [Header("Slot references")]
     [SerializeField]
     private Image icon;
 
-    private Item item;
+    protected Item item;
 
     #endregion
 
@@ -27,6 +27,13 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = item.icon;
         icon.enabled = true;
+    }
+
+    public void ClearSlot()
+    {
+        item = null;
+        icon.sprite = null;
+        icon.enabled = false;
     }
 
     #endregion

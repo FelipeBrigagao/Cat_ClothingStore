@@ -7,9 +7,10 @@ public class InventoryBase : MonoBehaviour
 {
     #region Variables
 
-    private int _maxInventorySlotsSpace;
-
+    [Header("Inventory values")]
     public List<Item> itens = new List<Item>();
+
+    private int _maxInventorySlotsSpace;
 
     #endregion
 

@@ -12,7 +12,8 @@ public class PlayerSetup
 
     public PlayerSetup()
     {
-
+        playerSpeed = 3;
+        playerInventoryMaxSlotAmount = 16;
     }
 
     public PlayerSetup(float playerSpeed, int inventorySlots)
