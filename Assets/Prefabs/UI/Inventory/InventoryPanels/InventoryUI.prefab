@@ -60,6 +60,21 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 15.72}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2681605404638002612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576597185975150310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 0.5}
+  m_EffectDistance: {x: 7, y: -4.5}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &7845078221384292698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,6 +242,12 @@ PrefabInstance:
 --- !u!224 &4904050129439319269 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2941411925695921599, guid: c6606e262091bdb4fb46f664db880864,
+    type: 3}
+  m_PrefabInstance: {fileID: 7845078221384292698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &576597185975150310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7268577828403838908, guid: c6606e262091bdb4fb46f664db880864,
     type: 3}
   m_PrefabInstance: {fileID: 7845078221384292698}
   m_PrefabAsset: {fileID: 0}

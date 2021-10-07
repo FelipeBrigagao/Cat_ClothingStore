@@ -21,7 +21,7 @@ public class InventorySlotBase : MonoBehaviour
 
     #region Methods
 
-    public void AddItem(Item newItem)
+    public virtual void AddItem(Item newItem)
     {
         item = newItem;
 
@@ -29,7 +29,7 @@ public class InventorySlotBase : MonoBehaviour
         icon.enabled = true;
     }
 
-    public void ClearSlot()
+    public virtual void ClearSlot()
     {
         item = null;
         icon.sprite = null;

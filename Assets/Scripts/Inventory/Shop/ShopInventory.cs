@@ -11,7 +11,7 @@ public class ShopInventory : InventoryBase
     private ShopSetup _shopSetup;
 
     [SerializeField]
-    private Text _storeName;
+    private Text _storeNameField;
 
     #endregion
 
@@ -30,7 +30,7 @@ public class ShopInventory : InventoryBase
     {
         SetSlotAmount(_shopSetup.shopMaxItens);
         PopulateShopInventory();
-        _storeName.text = _shopSetup.shopName;
+        _storeNameField.text = _shopSetup.shopName;
     }
 
     private void PopulateShopInventory()

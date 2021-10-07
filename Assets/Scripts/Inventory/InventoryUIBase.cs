@@ -9,7 +9,7 @@ public class InventoryUIBase : MonoBehaviour
     [SerializeField]
     private Transform _slotsHolder;
 
-    protected InventorySlotBase[] slots;
+    private InventorySlotBase[] slots;
 
     [SerializeField]
     protected InventoryBase _inventory;
