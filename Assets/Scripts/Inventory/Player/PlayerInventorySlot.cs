@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInventorySlot : InventorySlotBase
 {
-    #region Variable
+    #region Variables
     #endregion
 
     #region Unity Methods

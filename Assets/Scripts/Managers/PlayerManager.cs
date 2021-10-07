@@ -6,7 +6,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
 {
     #region Variables
     [Header("Player references")]
-    [SerializeField]
+    [SerializeField] 
     private GameObject _currentPlayer;
 
     [SerializeField]

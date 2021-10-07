@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInventoryUI : InventoryUIBase
 {
-    #region Variable
+    #region Variables
     #endregion
 
     #region Unity Methods

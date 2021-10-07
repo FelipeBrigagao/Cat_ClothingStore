@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShopInventorySlot : InventorySlotBase
 {
-    #region Variable
+    #region Variables
     [Header("Inventory reference")]
     private ShopInventory _shopInventory;
 

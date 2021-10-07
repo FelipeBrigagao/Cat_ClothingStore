@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShopSlotsHelper : MonoBehaviour
 {
-    #region Variable
+    #region Variables
     [Header("Slots reference")]
     [SerializeField]
     private Transform _slotsHolder;
