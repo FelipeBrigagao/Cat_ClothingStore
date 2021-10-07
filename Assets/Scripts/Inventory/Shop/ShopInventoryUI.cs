@@ -17,6 +17,8 @@ public class ShopInventoryUI : InventoryUIBase
     }
     #endregion
 
+
     #region Methods
+
     #endregion
 }

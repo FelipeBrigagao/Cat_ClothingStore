@@ -36,6 +36,11 @@ public class InventorySlotBase : MonoBehaviour
         icon.enabled = false;
     }
 
+    public void Use()
+    {
+
+    }
+
     #endregion
 
 }
