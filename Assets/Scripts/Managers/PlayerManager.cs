@@ -13,7 +13,6 @@ public class PlayerManager : SingletonBase<PlayerManager>
     private PlayerSetup _playerSetup;
 
     private PlayerController _playerController;
-    private InventoryPlayer _playerInventory;
     public bool CanMove { get; private set; }
 
 
@@ -35,12 +34,21 @@ public class PlayerManager : SingletonBase<PlayerManager>
     public void SetPlayerStats()
     {
         _playerController = _currentPlayer.GetComponent<PlayerController>();
-        _playerInventory = _currentPlayer.GetComponent<InventoryPlayer>();
-
+        
         _playerController?.SetSpeed(_playerSetup.playerSpeed);
-        _playerInventory?.SetSlotAmount(_playerSetup.playerInventoryMaxSlotAmount);
-
+        PlayerInventory.Instance.SetSlotAmount(_playerSetup.playerInventoryMaxSlotAmount);
     }
+
+    public void EnableMovement()
+    {
+        CanMove = true;
+    }
+    
+    public void DisableMovement()
+    {
+        CanMove = false;
+    }
+
 
     #endregion
 }

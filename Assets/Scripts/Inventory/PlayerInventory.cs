@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryPlayer : InventoryBase
+public class PlayerInventory : InventoryBase
 {
     #region Singleton
-    private static InventoryPlayer _instance;
+    private static PlayerInventory _instance;
 
 
-    public static InventoryPlayer Instance
+    public static PlayerInventory Instance
     {
         get
         {
@@ -16,7 +16,7 @@ public class InventoryPlayer : InventoryBase
             {
                 Debug.Log("Manager not found");
 
-                return FindObjectOfType<InventoryPlayer>();
+                return FindObjectOfType<PlayerInventory>();
             }
 
             return _instance;
@@ -28,13 +28,13 @@ public class InventoryPlayer : InventoryBase
     {
         if (_instance == null)
         {
-            Debug.Log($"Instantiated Manager:{GetComponent<InventoryPlayer>().name}");
-            _instance = GetComponent<InventoryPlayer>();
+            Debug.Log($"Instantiated Manager:{GetComponent<PlayerInventory>().name}");
+            _instance = GetComponent<PlayerInventory>();
 
         }
         else
         {
-            Debug.LogWarning($"Manager already exist: {GetComponent<InventoryPlayer>().name} ");
+            Debug.LogWarning($"Manager already exist: {GetComponent<PlayerInventory>().name} ");
             Destroy(gameObject);
         }
     }
