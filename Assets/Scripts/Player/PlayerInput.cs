@@ -9,6 +9,12 @@ public class PlayerInput : MonoBehaviour
 
     private PlayerController _playerController;
 
+    [Header("Player input keys")]
+    [SerializeField]
+    private KeyCode _playerInventoryKey;
+
+    [SerializeField]
+    private KeyCode _interactKey;
 
     #endregion
 
@@ -22,7 +28,12 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        GetMovementInput();
+        if (PlayerManager.Instance.CanMove)
+        {
+            GetMovementInput();
+        }
+
+        OpenInventoryInput();
     }
 
 
@@ -40,6 +51,21 @@ public class PlayerInput : MonoBehaviour
 
     }
 
+    private void OpenInventoryInput()
+    {
+        if (Input.GetKeyDown(_playerInventoryKey))
+        {
+            if (UIManager.Instance._playerInventoryIsOpen)
+            {
+                UIManager.Instance.ClosePlayerInventory();
+            }
+            else 
+            {
+                UIManager.Instance.OpenPlayerInventory();
+
+            }
+        }
+    }
 
     #endregion
 }
