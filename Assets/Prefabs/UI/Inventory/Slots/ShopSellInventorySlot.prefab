@@ -157,6 +157,21 @@ PrefabInstance:
       propertyPath: _priceTagUI
       value: 
       objectReference: {fileID: 1070450840184422052}
+    - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
+        type: 3}
+      propertyPath: _notEnoughtMoneyColor.b
+      value: 0.19607845
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
+        type: 3}
+      propertyPath: _notEnoughtMoneyColor.g
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
+        type: 3}
+      propertyPath: _notEnoughtMoneyColor.r
+      value: 0.87843144
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98878b5ee1dfaf4418298dcdbb6065b5, type: 3}
 --- !u!114 &5592349276911395155 stripped
@@ -178,7 +193,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 3956622217651334624}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 

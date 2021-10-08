@@ -13,22 +13,43 @@ public class ShopInventorySlot : InventorySlotBase
     [SerializeField]
     private Text _priceTagUI;
 
+    [SerializeField]
+    private Color _notEnoughtMoneyColor; 
+    [SerializeField]
+    private Color _enoughtMoneyColor; 
+
     #endregion
 
     #region Unity Methods
     #endregion
 
     #region Methods
-    public override void AddItem(Item newItem)
+    public override void AddItemSlot(Item newItem)
     {
-        base.AddItem(newItem);
+        base.AddItemSlot(newItem);
+
         _priceTagUI.enabled = true;
 
+        _priceTagUI.text = $"$ {item.price}";
+        
+        if(item.price <= CurrencyManager.Instance._currentMoney)
+        {
+            _priceTagUI.color = _enoughtMoneyColor;
+
+        }else if(item.price > CurrencyManager.Instance._currentMoney)
+        {
+            _priceTagUI.color = _notEnoughtMoneyColor;
+
+        }
+        
+
     }
+
 
     public override void ClearSlot()
     {
         base.ClearSlot();
+        _priceTagUI.text = null;
         _priceTagUI.enabled = false;
 
     }
@@ -41,20 +62,28 @@ public class ShopInventorySlot : InventorySlotBase
 
         if (itemSold)
         {
+            CurrencyManager.Instance.AddMoney(item.price);
+
             PlayerInventory.Instance.RemoveItem(item);
         }
     }
 
     public void Buy()
     {
-        bool itemBought;
-
-        itemBought = PlayerInventory.Instance.AddItem(item);
-
-        if (itemBought)
+        if(item.price < CurrencyManager.Instance._currentMoney)
         {
-            _shopInventory.RemoveItem(item);
+            bool itemBought;
+            itemBought = PlayerInventory.Instance.AddItem(item);
+
+            if (itemBought)
+            {
+                CurrencyManager.Instance.RemoveMoney(item.price);
+
+                _shopInventory.RemoveItem(item);
+            }
+
         }
+
     }
 
     public void SetShopInventoryInstance(ShopInventory shopInventory)

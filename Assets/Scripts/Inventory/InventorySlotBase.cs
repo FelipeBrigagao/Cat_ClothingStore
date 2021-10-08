@@ -21,7 +21,7 @@ public class InventorySlotBase : MonoBehaviour
 
     #region Methods
 
-    public virtual void AddItem(Item newItem)
+    public virtual void AddItemSlot(Item newItem)
     {
         item = newItem;
 

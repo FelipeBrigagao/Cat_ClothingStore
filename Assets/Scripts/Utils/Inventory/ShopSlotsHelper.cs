@@ -8,11 +8,12 @@ public class ShopSlotsHelper : MonoBehaviour
     [Header("Slots reference")]
     [SerializeField]
     private Transform _slotsHolder;
+   
+    private ShopInventorySlot[] slots;
 
     [SerializeField]
     private ShopInventory _shopInventory;
 
-    private ShopInventorySlot[] slots;
     #endregion
 
     #region Unity Methods

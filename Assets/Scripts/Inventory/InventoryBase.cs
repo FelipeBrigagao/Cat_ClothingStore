@@ -12,6 +12,8 @@ public class InventoryBase : MonoBehaviour
 
     private int _maxInventorySlotsSpace;
 
+    private float _updateUIDelay = 0.001f;
+
     #endregion
 
 
@@ -28,6 +30,7 @@ public class InventoryBase : MonoBehaviour
 
 
     #region Unity Methods
+    
     #endregion
 
 
@@ -39,7 +42,7 @@ public class InventoryBase : MonoBehaviour
         {
             itens.Add(item);
 
-            ItemChanged();
+            Invoke(nameof(ItemChanged), _updateUIDelay);
 
             return true;
         }

@@ -13,7 +13,7 @@ public class ShopSetup
     public ShopSetup()
     {
         shopName = "Shop";
-        shopMaxItens = 10;
+        shopMaxItens = 16;
         initialShopItens = new List<Item>();
     }
 

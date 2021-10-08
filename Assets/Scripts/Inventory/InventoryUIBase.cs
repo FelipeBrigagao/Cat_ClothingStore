@@ -48,7 +48,7 @@ public class InventoryUIBase : MonoBehaviour
         {
             if( i < _inventory.itens.Count)
             {
-                slots[i].AddItem(_inventory.itens[i]);
+                slots[i].AddItemSlot(_inventory.itens[i]);
             }
             else
             {

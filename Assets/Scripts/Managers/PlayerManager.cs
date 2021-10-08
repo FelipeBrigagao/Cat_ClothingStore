@@ -37,6 +37,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
         
         _playerController?.SetSpeed(_playerSetup.playerSpeed);
         PlayerInventory.Instance.SetSlotAmount(_playerSetup.playerInventoryMaxSlotAmount);
+        CurrencyManager.Instance.SetInitialMoneyAmount(_playerSetup.initialMoney);
     }
 
     public void EnableMovement()

@@ -11,7 +11,7 @@ public class GameManager : SingletonBase<GameManager>
 
     #region Unity Methods
 
-    private void Start()
+    private void Awake()
     {
         GameStart();
     }

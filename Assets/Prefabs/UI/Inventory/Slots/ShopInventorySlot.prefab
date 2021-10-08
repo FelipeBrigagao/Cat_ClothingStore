@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 6547197274297091394}
   _priceTagUI: {fileID: 0}
+  _notEnoughtMoneyColor: {r: 0.9056604, g: 0.19223925, b: 0.19223925, a: 1}
+  _enoughtMoneyColor: {r: 0.8773585, g: 0.67714846, b: 0.19450872, a: 1}
 --- !u!1 &9001954262599973494
 GameObject:
   m_ObjectHideFlags: 0
