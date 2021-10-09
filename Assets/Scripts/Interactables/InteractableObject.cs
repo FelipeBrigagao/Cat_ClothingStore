@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorInteractable : Interactable
+public class InteractableObject : Interactable
 {
     #region Variables
     [SerializeField]
-    GameObject _doorOpen;
+    GameObject _objectOpen;
 
     [SerializeField]
-    GameObject _doorClosed;
+    GameObject _objectClosed;
 
     #endregion
 
@@ -19,15 +19,15 @@ public class DoorInteractable : Interactable
     #region Methods
     public override void Interact()
     {
-        if (_doorOpen.activeInHierarchy)
+        if (_objectOpen.activeInHierarchy)
         {
-            _doorClosed.SetActive(true);
-            _doorOpen.SetActive(false);
+            _objectClosed.SetActive(true);
+            _objectOpen.SetActive(false);
         }
         else
         {
-            _doorClosed.SetActive(false);
-            _doorOpen.SetActive(true);
+            _objectClosed.SetActive(false);
+            _objectOpen.SetActive(true);
 
         }
 
