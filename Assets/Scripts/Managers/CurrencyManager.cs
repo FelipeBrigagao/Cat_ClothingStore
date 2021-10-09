@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CurrencyManager : SingletonBase<CurrencyManager>
 {
     #region Variables
-    [Header("Money variables")]
-    [SerializeField]
-    private Text _currentMoneyUI;
+    
 
     public int _currentMoney { get; private set;}
 
@@ -22,26 +19,23 @@ public class CurrencyManager : SingletonBase<CurrencyManager>
     public void SetInitialMoneyAmount(int initialMoney)
     {
         _currentMoney = initialMoney;
-        UpdateMoneyUI();
+        UIManager.Instance.UpdateMoneyUI(_currentMoney);
     }
 
     public void AddMoney(int moneyAdded)
     {
         _currentMoney += moneyAdded;
-        UpdateMoneyUI();
+        UIManager.Instance.UpdateMoneyUI(_currentMoney);
     }
 
     public void RemoveMoney(int moneyRemoved)
     {
         _currentMoney -= moneyRemoved;
-        UpdateMoneyUI();
+        UIManager.Instance.UpdateMoneyUI(_currentMoney);
 
     }
 
-    private void UpdateMoneyUI()
-    {
-        _currentMoneyUI.text = $"$ {_currentMoney.ToString()}";
-    }
+    
 
     #endregion
 

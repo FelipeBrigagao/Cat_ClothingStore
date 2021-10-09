@@ -50,6 +50,13 @@ public class PlayerManager : SingletonBase<PlayerManager>
         CanMove = false;
     }
 
+    #region Player references setting
+    public void SetCurrentPlayer(GameObject currentPlayer)
+    {
+        _currentPlayer = currentPlayer;
+    }
+
+    #endregion
 
     #endregion
 }

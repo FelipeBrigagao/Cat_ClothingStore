@@ -10,12 +10,12 @@ public class GameManager : SingletonBase<GameManager>
 
 
     #region Unity Methods
-
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         GameStart();
     }
-
     #endregion
 
 
