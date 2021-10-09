@@ -11,6 +11,8 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
 
     public Clothes _chestItem { get; private set; }
 
+    private PlayerUI _playerUI;
+
     #endregion
 
     #region Events
@@ -121,6 +123,12 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
         EquipmentChanged();
     }
 
+
+
+    public void SetPlayerUI(PlayerUI playerUI)
+    {
+        _playerUI = playerUI;
+    }
 
     #endregion
 

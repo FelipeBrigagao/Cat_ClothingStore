@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Clothes")]
 public class Clothes : Item
 {
     public ClothingTypes clothingType;
+
+    public Sprite frontSide;
+    public Sprite backSide;
+    public Sprite leftSide;
+
 
     public override void UseItem()
     {
