@@ -1,19 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5527759394145060498
+--- !u!114 &3449397196158755716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783847229070915030}
+  m_GameObject: {fileID: 9190181650486929598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662198e846f5e8046823f77ba25c2fd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 74919bbb294944c4791019efa2cbc451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 2783847229708453230}
---- !u!1001 &7713040916217148324
+  icon: {fileID: 9190181648507230214}
+--- !u!1001 &3612478523668770508
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -23,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 5595739678769088114, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
       propertyPath: m_Name
-      value: PlayerInventorySlot
+      value: PlayerEquipmentSlot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5595739678769088115, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
@@ -144,7 +144,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5527759394145060498}
+      objectReference: {fileID: 3449397196158755716}
     - target: {fileID: 5595739678769088116, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -153,12 +153,12 @@ PrefabInstance:
     - target: {fileID: 5595739678769088116, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Use
+      value: RemoveItemFromSlot
       objectReference: {fileID: 0}
     - target: {fileID: 5595739678769088116, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerInventorySlot, Assembly-CSharp
+      value: PlayerEquipSlot, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5595739678769088116, guid: 20fe0e80189fb0a45884b93ca641ddcf,
         type: 3}
@@ -167,17 +167,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20fe0e80189fb0a45884b93ca641ddcf, type: 3}
---- !u!1 &2783847229070915030 stripped
+--- !u!1 &9190181650486929598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5595739678769088114, guid: 20fe0e80189fb0a45884b93ca641ddcf,
     type: 3}
-  m_PrefabInstance: {fileID: 7713040916217148324}
+  m_PrefabInstance: {fileID: 3612478523668770508}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2783847229708453230 stripped
+--- !u!114 &9190181648507230214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5595739679809304266, guid: 20fe0e80189fb0a45884b93ca641ddcf,
     type: 3}
-  m_PrefabInstance: {fileID: 7713040916217148324}
+  m_PrefabInstance: {fileID: 3612478523668770508}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 0

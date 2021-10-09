@@ -36,7 +36,7 @@ public class InventorySlotBase : MonoBehaviour
         icon.enabled = false;
     }
 
-    public void Use()
+    public virtual void Use()
     {
 
     }

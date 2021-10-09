@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInventorySlot : InventorySlotBase
+public class PlayerEquipSlot : InventorySlotBase
 {
     #region Variables
     #endregion
@@ -11,12 +11,9 @@ public class PlayerInventorySlot : InventorySlotBase
     #endregion
 
     #region Methods
-    public override void Use()
+    public void RemoveItemFromSlot()
     {
-        base.Use();
-
-        item.UseItem();
+        item.RemoveItem();
     }
-
     #endregion
 }

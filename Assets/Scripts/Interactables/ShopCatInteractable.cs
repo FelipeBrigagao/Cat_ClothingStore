@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopCat : Interactable
+public class ShopCatInteractable : Interactable
 {
     #region Variables
     [Header("Shop inventory references")]

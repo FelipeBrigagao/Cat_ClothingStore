@@ -9,11 +9,22 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public int price = 0;
     public ItemTypes itemType;
+
+
+    public virtual void UseItem()
+    {
+        Debug.Log($"Item {name} used.");
+    }
+
+    public virtual void RemoveItem()
+    {
+        Debug.Log($"Item {name} removed.");
+    }
     
 }
 
 
-#region Enum
+#region Enum item types
 public enum ItemTypes
 {
     CLOTHING,
