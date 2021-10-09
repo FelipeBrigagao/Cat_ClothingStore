@@ -56,30 +56,38 @@ public class ShopInventorySlot : InventorySlotBase
 
     public void Sell()
     {
-        bool itemSold;
-
-        itemSold = _shopInventory.AddItem(item);
-
-        if (itemSold)
+        if (item != null)
         {
-            CurrencyManager.Instance.AddMoney(item.price);
+            bool itemSold;
 
-            PlayerInventory.Instance.RemoveItem(item);
+            itemSold = _shopInventory.AddItem(item);
+
+            if (itemSold)
+            {
+                CurrencyManager.Instance.AddMoney(item.price);
+
+                PlayerInventory.Instance.RemoveItem(item);
+            }
+
         }
     }
 
     public void Buy()
     {
-        if(item.price < CurrencyManager.Instance._currentMoney)
+        if (item != null)
         {
-            bool itemBought;
-            itemBought = PlayerInventory.Instance.AddItem(item);
-
-            if (itemBought)
+            if(item.price <= CurrencyManager.Instance._currentMoney)
             {
-                CurrencyManager.Instance.RemoveMoney(item.price);
+                bool itemBought;
+                itemBought = PlayerInventory.Instance.AddItem(item);
 
-                _shopInventory.RemoveItem(item);
+                if (itemBought)
+                {
+                    CurrencyManager.Instance.RemoveMoney(item.price);
+
+                    _shopInventory.RemoveItem(item);
+                }
+
             }
 
         }

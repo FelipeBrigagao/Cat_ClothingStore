@@ -55,6 +55,7 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
                 break;
         }
     }
+
     private void AddHeadItem(Clothes clothing)
     {
         if (_headItem != null)

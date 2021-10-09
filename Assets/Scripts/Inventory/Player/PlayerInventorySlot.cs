@@ -15,7 +15,10 @@ public class PlayerInventorySlot : InventorySlotBase
     {
         base.Use();
 
-        item.UseItem();
+        if (item != null)
+        {
+            item.UseItem();
+        }
     }
 
     #endregion
