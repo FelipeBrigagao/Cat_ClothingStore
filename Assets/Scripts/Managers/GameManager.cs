@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class GameManager : SingletonBase<GameManager>
 {
@@ -10,12 +7,12 @@ public class GameManager : SingletonBase<GameManager>
 
 
     #region Unity Methods
-
-    private void Start()
+    protected override void Awake()
     {
+        base.Awake();
+
         GameStart();
     }
-
     #endregion
 
 

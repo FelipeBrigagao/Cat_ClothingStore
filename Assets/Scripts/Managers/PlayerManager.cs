@@ -1,19 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : SingletonBase<PlayerManager>
 {
     #region Variables
     [Header("Player references")]
-    [SerializeField]
+    [SerializeField] 
     private GameObject _currentPlayer;
 
     [SerializeField]
     private PlayerSetup _playerSetup;
 
     private PlayerController _playerController;
-    private InventoryPlayer _playerInventory;
     public bool CanMove { get; private set; }
 
 
@@ -35,12 +32,29 @@ public class PlayerManager : SingletonBase<PlayerManager>
     public void SetPlayerStats()
     {
         _playerController = _currentPlayer.GetComponent<PlayerController>();
-        _playerInventory = _currentPlayer.GetComponent<InventoryPlayer>();
-
+        
         _playerController?.SetSpeed(_playerSetup.playerSpeed);
-        _playerInventory?.SetSlotAmount(_playerSetup.playerInventoryMaxSlotAmount);
-
+        PlayerInventory.Instance.SetSlotAmount(_playerSetup.playerInventoryMaxSlotAmount);
+        CurrencyManager.Instance.SetInitialMoneyAmount(_playerSetup.initialMoney);
     }
+
+    public void EnableMovement()
+    {
+        CanMove = true;
+    }
+    
+    public void DisableMovement()
+    {
+        CanMove = false;
+    }
+
+    #region Player references setting
+    public void SetCurrentPlayer(GameObject currentPlayer)
+    {
+        _currentPlayer = currentPlayer;
+    }
+
+    #endregion
 
     #endregion
 }
