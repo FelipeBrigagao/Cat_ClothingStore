@@ -314,3 +314,129 @@ Received Import Request.
 Start importing Assets/Scripts/Player/PlayerInteraction.cs using Guid(6d68ba825e6ff4f4580d12d75bb67537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bd74503a7985dd44a029707e1cd318') in 0.003014 seconds
   Import took 0.005719 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002149 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2005 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.1 MB.
+System memory in use after: 92.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2501.
+Total: 3.214000 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.116200 ms MarkObjects: 2.684700 ms  DeleteObjects: 0.151500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 4719.705546 seconds.
+  path: Assets/Scripts/Interactables/ShopCatInteractable.cs
+  artifactKey: Guid(318584f714508184cadd88c177e6dd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Interactables/ShopCatInteractable.cs using Guid(318584f714508184cadd88c177e6dd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1941d016071e49b3e3a12697ecb27764') in 0.007766 seconds
+  Import took 0.010532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003618 seconds.
+  path: Assets/Scripts/Interactables/ShopCatInteractable.cs
+  artifactKey: Guid(318584f714508184cadd88c177e6dd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Interactables/ShopCatInteractable.cs using Guid(318584f714508184cadd88c177e6dd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1941d016071e49b3e3a12697ecb27764') in 0.001504 seconds
+  Import took 0.004050 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001512 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.716 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2005 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.1 MB.
+System memory in use after: 92.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2505.
+Total: 1.899600 ms (FindLiveObjects: 0.159100 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.592600 ms  DeleteObjects: 0.085800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.528301 seconds.
+  path: Assets/Scenes/CatColthesShop.unity
+  artifactKey: Guid(d824df95cdd88d143beb2b3a90b33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CatColthesShop.unity using Guid(d824df95cdd88d143beb2b3a90b33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1072f4e2f29f02da7cf27141f5f4b878') in 0.021574 seconds
+  Import took 0.024355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.133195 seconds.
+  path: Assets/Scenes/CatClothesShop.unity
+  artifactKey: Guid(d824df95cdd88d143beb2b3a90b33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CatClothesShop.unity using Guid(d824df95cdd88d143beb2b3a90b33b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de31870041cf417910e4ea58b4c7488') in 0.009634 seconds
+  Import took 0.012363 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.731 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2005 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.1 MB.
+System memory in use after: 92.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2509.
+Total: 1.725400 ms (FindLiveObjects: 0.153700 ms CreateObjectMapping: 0.058600 ms MarkObjects: 1.425900 ms  DeleteObjects: 0.086600 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.6 MB.
+System memory in use after: 52.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2509.
+Total: 1.849700 ms (FindLiveObjects: 0.158400 ms CreateObjectMapping: 0.064100 ms MarkObjects: 1.540900 ms  DeleteObjects: 0.085700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  colorSpace: 1 -> 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.6 MB.
+System memory in use after: 52.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2509.
+Total: 2.116800 ms (FindLiveObjects: 0.186600 ms CreateObjectMapping: 0.067100 ms MarkObjects: 1.774200 ms  DeleteObjects: 0.088000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
