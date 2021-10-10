@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CatClothesShop.unity
+    guid: d824df95cdd88d143beb2b3a90b33b89
   m_configObjects: {}
