@@ -45,6 +45,7 @@ public class UIManager : SingletonBase<UIManager>
             _playerInventoryUI.SetActive(true);
             _playerInventoryButtonUI.SetActive(false);
             _playerInventoryIsOpen = true;
+            CameraManager.Instance.ChangeToInventoryCam();
             CheckInteractionIconEnabled();
             PlayerManager.Instance.DisableMovement();
         }
@@ -68,6 +69,7 @@ public class UIManager : SingletonBase<UIManager>
 
         _playerInventoryButtonUI.SetActive(true);
         _playerInventoryIsOpen = false;
+        CameraManager.Instance.ChangeToPlayerCam();
         ReenableInteractionIcon();
         PlayerManager.Instance.EnableMovement();
     }

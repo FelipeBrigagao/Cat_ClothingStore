@@ -114,8 +114,10 @@ MonoBehaviour:
     shopName: Clothes Shop
     shopMaxItens: 16
     initialShopItens:
-    - {fileID: 11400000, guid: e83decdf309ad9c4584562b12c31e2fa, type: 2}
-    - {fileID: 11400000, guid: 091d2696be0fee94f8e6ebb13cdd6afe, type: 2}
+    - {fileID: 11400000, guid: 011eba43251d3144990c4ba10b6e1838, type: 2}
+    - {fileID: 11400000, guid: 57e080e8caa50044b96ea2266621a770, type: 2}
+    - {fileID: 11400000, guid: daca3854b100ab942bea207c4d828116, type: 2}
+    - {fileID: 11400000, guid: ea78ff378753e1e45ab78899f7f9f733, type: 2}
   _storeNameField: {fileID: 4939146650691843352}
 --- !u!114 &1962024313
 MonoBehaviour:
