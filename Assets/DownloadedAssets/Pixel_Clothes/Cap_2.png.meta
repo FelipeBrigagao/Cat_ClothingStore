@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 4f638e52d8af0724199d39367b01d21d
+guid: b3ba9858481656343b631a428993308c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7490180441346702064
-    second: Shirt_Front
+      213: 618326729565651793
+    second: Cap_Front
   - first:
-      213: -7474762406436251324
-    second: Shirt_Back
+      213: 6477626692414979053
+    second: Cap_Back
   - first:
-      213: -8094044499082657077
-    second: Shirt_Side
+      213: -9196868308142793274
+    second: Cap_Side
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shirt_Front
+      name: Cap_Front
       rect:
         serializedVersion: 2
-        x: 24
-        y: 44
+        x: 22
+        y: 63
         width: 21
-        height: 14
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01583f1c2988d0890800000000000000
-      internalID: -7490180441346702064
+      spriteID: 153c3ee62ecb49800800000000000000
+      internalID: 618326729565651793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Back
+      name: Cap_Back
       rect:
         serializedVersion: 2
-        x: 56
-        y: 44
+        x: 54
+        y: 63
         width: 21
-        height: 14
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,29 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4495cefb13f444890800000000000000
-      internalID: -7474762406436251324
+      spriteID: debbbf4282725e950800000000000000
+      internalID: 6477626692414979053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shirt_Side
+      name: Cap_Side
       rect:
         serializedVersion: 2
-        x: 87
-        y: 44
-        width: 21
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 80
+        y: 63
+        width: 26
+        height: 23
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc249f3896d2caf80800000000000000
-      internalID: -8094044499082657077
+      spriteID: 6cdd91730092e5080800000000000000
+      internalID: -9196868308142793274
       vertices: []
       indices: 
       edges: []

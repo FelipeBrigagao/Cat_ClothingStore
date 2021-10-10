@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eea15004d4a5c949960c53f0c75a973, type: 3}
+  m_Name: Blue_Shirt
+  m_EditorClassIdentifier: 
+  name: Blue_Shirt
+  icon: {fileID: -7490180441346702064, guid: 4f638e52d8af0724199d39367b01d21d, type: 3}
+  price: 2
+  itemType: 0
+  clothingType: 1
+  frontSide: {fileID: -7490180441346702064, guid: 4f638e52d8af0724199d39367b01d21d,
+    type: 3}
+  backSide: {fileID: -7474762406436251324, guid: 4f638e52d8af0724199d39367b01d21d,
+    type: 3}
+  leftSide: {fileID: -8094044499082657077, guid: 4f638e52d8af0724199d39367b01d21d,
+    type: 3}

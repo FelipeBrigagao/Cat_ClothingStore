@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 4f638e52d8af0724199d39367b01d21d
+guid: 9c1d1279977145c4ba786eac8715d21b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7490180441346702064
+      213: -4939470763623180678
     second: Shirt_Front
   - first:
-      213: -7474762406436251324
+      213: 1320013809179396472
     second: Shirt_Back
   - first:
-      213: -8094044499082657077
+      213: -7420058884813040642
     second: Shirt_Side
   externalObjects: {}
   serializedVersion: 11
@@ -139,8 +139,8 @@ TextureImporter:
       name: Shirt_Front
       rect:
         serializedVersion: 2
-        x: 24
-        y: 44
+        x: 22
+        y: 40
         width: 21
         height: 14
       alignment: 0
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01583f1c2988d0890800000000000000
-      internalID: -7490180441346702064
+      spriteID: a7610dbc289737bb0800000000000000
+      internalID: -4939470763623180678
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
       name: Shirt_Back
       rect:
         serializedVersion: 2
-        x: 56
-        y: 44
+        x: 54
+        y: 40
         width: 21
         height: 14
       alignment: 0
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4495cefb13f444890800000000000000
-      internalID: -7474762406436251324
+      spriteID: 8798fb2d091a15210800000000000000
+      internalID: 1320013809179396472
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       name: Shirt_Side
       rect:
         serializedVersion: 2
-        x: 87
-        y: 44
+        x: 85
+        y: 40
         width: 21
         height: 15
       alignment: 0
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc249f3896d2caf80800000000000000
-      internalID: -8094044499082657077
+      spriteID: ef3dc36e1c7a60990800000000000000
+      internalID: -7420058884813040642
       vertices: []
       indices: 
       edges: []

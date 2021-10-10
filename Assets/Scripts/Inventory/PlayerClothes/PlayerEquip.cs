@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerEquip : SingletonBase<PlayerEquip>
@@ -66,6 +64,7 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
         }
 
         _headItem = clothing;
+        _playerUI.ChangeHeadSprites(clothing);
         EquipmentChanged();
 
     }
@@ -78,6 +77,7 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
         }
 
         _chestItem = clothing;
+        _playerUI.ChangeChestSprites(clothing);
         EquipmentChanged();
     }
 
@@ -112,6 +112,7 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
 
         PlayerInventory.Instance.AddItem(_headItem);
         _headItem = null;
+        _playerUI.RemoveHeadSprites();
         EquipmentChanged();
     }
 
@@ -120,6 +121,7 @@ public class PlayerEquip : SingletonBase<PlayerEquip>
 
         PlayerInventory.Instance.AddItem(_chestItem);
         _chestItem = null;
+        _playerUI.RemoveChestSprites();
         EquipmentChanged();
     }
 

@@ -10,10 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eea15004d4a5c949960c53f0c75a973, type: 3}
-  m_Name: Hat
+  m_Name: Blue_Cap
   m_EditorClassIdentifier: 
-  name: Hat
-  icon: {fileID: 21300046, guid: ed7554aeefd5da44a9fe1ee9b93afe77, type: 3}
+  name: Blue_Cap
+  icon: {fileID: 2451428771736204148, guid: 711f01b56c0cbb64fb6aa82fa38ec999, type: 3}
   price: 1
   itemType: 0
   clothingType: 0
+  frontSide: {fileID: 2451428771736204148, guid: 711f01b56c0cbb64fb6aa82fa38ec999,
+    type: 3}
+  backSide: {fileID: -2931867885004109298, guid: 711f01b56c0cbb64fb6aa82fa38ec999,
+    type: 3}
+  leftSide: {fileID: -3733172925819362036, guid: 711f01b56c0cbb64fb6aa82fa38ec999,
+    type: 3}
