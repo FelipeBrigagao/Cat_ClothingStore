@@ -19,6 +19,7 @@ public class PlayerAnimation : MonoBehaviour
     [Header("Animation references")]
     private Animator _anim;
 
+    private int _lookDownInput = -1;
     #endregion
 
 
@@ -29,11 +30,21 @@ public class PlayerAnimation : MonoBehaviour
         _anim = GetComponentInChildren<Animator>();
     }
 
+
+    private void OnEnable()
+    {
+        UIManager.Instance.OnInventoryOpen += PlayInventoryAnim;
+    }
+
+    private void OnDisable()
+    {
+        UIManager.Instance.OnInventoryOpen -= PlayInventoryAnim;        
+    }
     #endregion
 
 
     #region Methods
-    
+
     public void MovementAnimation(Vector2 input)
     {
         _inputMagnitude = input.magnitude;
@@ -48,7 +59,10 @@ public class PlayerAnimation : MonoBehaviour
         _anim.SetFloat(_speedParameterName, _inputMagnitude);
     }
 
-
+    private void PlayInventoryAnim()
+    {
+        _anim.SetFloat(_moveVerticalParameterName, _lookDownInput);
+    }
 
     #endregion
 }
