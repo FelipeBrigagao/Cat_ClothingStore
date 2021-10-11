@@ -13,6 +13,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
     private PlayerController _playerController;
     public bool CanMove { get; private set; }
 
+    private Vector2 _playerStop = new Vector2(0, 0);
 
     #endregion
 
@@ -56,7 +57,14 @@ public class PlayerManager : SingletonBase<PlayerManager>
     public void DisableMovement()
     {
         CanMove = false;
+        StopPlayer();
     }
+
+    private void StopPlayer()
+    {
+        _playerController.SetInput(_playerStop);
+    }
+
 
     #region Player references setting
     public void SetCurrentPlayer(GameObject currentPlayer)
