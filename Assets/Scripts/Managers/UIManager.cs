@@ -55,7 +55,7 @@ public class UIManager : SingletonBase<UIManager>
             _playerInventoryButtonUI.SetActive(false);
             _playerInventoryIsOpen = true;
             InventoryOpened();
-            CheckInteractionIconEnabled();
+            CheckInteractionIcon();
         }
         
     }
@@ -89,7 +89,7 @@ public class UIManager : SingletonBase<UIManager>
         _shopInventoryUI.SetActive(true);
         _shopIsOpen = true;
         _playerInventoryButtonUI.SetActive(false);
-        CheckInteractionIconEnabled();
+        CheckInteractionIcon();
         PlayerManager.Instance.DisableMovement();
         
     }
@@ -138,7 +138,7 @@ public class UIManager : SingletonBase<UIManager>
         _playerInteractIcon.SetActive(false);
     }
 
-    private void CheckInteractionIconEnabled()
+    private void CheckInteractionIcon()
     {
         if (_playerInteractIcon.activeInHierarchy)
         {

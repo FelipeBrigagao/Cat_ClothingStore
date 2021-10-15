@@ -62,7 +62,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
     private void StopPlayer()
     {
-        _playerController.SetInput(_playerStop);
+        _playerController?.SetInput(_playerStop);
     }
 
 

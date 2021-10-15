@@ -7,17 +7,24 @@ public class ShopCatInteractable : Interactable
     [SerializeField]
     private GameObject _shopInventoryUI;
 
+    private UIManager _uiManager;
+
     #endregion
 
     #region Unity Methods
+    private void Start()
+    {
+        _uiManager = UIManager.Instance;
+    }
     #endregion
+
 
     #region Methods
     public override void Interact()
     {
-        if(!UIManager.Instance._shopIsOpen && !UIManager.Instance._playerInventoryIsOpen)
+        if(!_uiManager._shopIsOpen && !_uiManager._playerInventoryIsOpen)
         {
-            UIManager.Instance.OpenShop(_shopInventoryUI);
+            _uiManager.OpenShop(_shopInventoryUI);
         }      
     }
     

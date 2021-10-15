@@ -11,7 +11,8 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerInteraction>().EnableInteractIcon();
+
+            UIManager.Instance.EnableInteractIcon();
         }
     }
 
@@ -19,7 +20,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerInteraction>().DisableInteractIcon();
+            UIManager.Instance.DisableInteractIcon();
         }
     }
     #endregion
