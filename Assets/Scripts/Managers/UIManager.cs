@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +30,15 @@ public class UIManager : SingletonBase<UIManager>
 
     #endregion
 
+    #region Events
+    public event Action OnInventoryOpen;
 
+    public void InventoryOpened()
+    {
+        OnInventoryOpen?.Invoke();
+    }
+
+    #endregion
 
     #region Unity Methods
     #endregion
@@ -45,9 +54,8 @@ public class UIManager : SingletonBase<UIManager>
             _playerInventoryUI.SetActive(true);
             _playerInventoryButtonUI.SetActive(false);
             _playerInventoryIsOpen = true;
-            CameraManager.Instance.ChangeToInventoryCam();
-            CheckInteractionIconEnabled();
-            PlayerManager.Instance.DisableMovement();
+            InventoryOpened();
+            CheckInteractionIcon();
         }
         
     }
@@ -81,7 +89,7 @@ public class UIManager : SingletonBase<UIManager>
         _shopInventoryUI.SetActive(true);
         _shopIsOpen = true;
         _playerInventoryButtonUI.SetActive(false);
-        CheckInteractionIconEnabled();
+        CheckInteractionIcon();
         PlayerManager.Instance.DisableMovement();
         
     }
@@ -130,7 +138,7 @@ public class UIManager : SingletonBase<UIManager>
         _playerInteractIcon.SetActive(false);
     }
 
-    private void CheckInteractionIconEnabled()
+    private void CheckInteractionIcon()
     {
         if (_playerInteractIcon.activeInHierarchy)
         {

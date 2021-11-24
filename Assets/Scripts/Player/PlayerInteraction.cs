@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
@@ -14,16 +14,6 @@ public class PlayerInteraction : MonoBehaviour
 
 
     #region Methods
-
-    public void EnableInteractIcon()
-    {
-        UIManager.Instance.EnableInteractIcon();
-    }
-
-    public void DisableInteractIcon()
-    {
-        UIManager.Instance.DisableInteractIcon();
-    }
 
     public void CheckInteraction()
     {

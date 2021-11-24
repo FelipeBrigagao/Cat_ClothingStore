@@ -16,6 +16,15 @@ public class CameraManager : SingletonBase<CameraManager>
     #endregion
 
     #region Unity Methods
+    private void OnEnable()
+    {
+        UIManager.Instance.OnInventoryOpen += ChangeToInventoryCam;
+    }
+
+    private void OnDisable()
+    {
+        UIManager.Instance.OnInventoryOpen -= ChangeToInventoryCam;
+    }
     #endregion
 
     #region Methods

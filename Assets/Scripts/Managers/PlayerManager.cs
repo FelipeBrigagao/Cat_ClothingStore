@@ -25,6 +25,16 @@ public class PlayerManager : SingletonBase<PlayerManager>
         CanMove = true;
     }
 
+    private void OnEnable()
+    {
+        UIManager.Instance.OnInventoryOpen += DisableMovement;
+    }
+
+    private void OnDisable()
+    {
+        UIManager.Instance.OnInventoryOpen -= DisableMovement;
+    }
+
     #endregion
 
 
@@ -52,7 +62,7 @@ public class PlayerManager : SingletonBase<PlayerManager>
 
     private void StopPlayer()
     {
-        _playerController.SetInput(_playerStop);
+        _playerController?.SetInput(_playerStop);
     }
 
 
