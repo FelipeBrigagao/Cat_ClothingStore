@@ -21,7 +21,6 @@ public class InventoryUIBase : MonoBehaviour
     {
         slots = _slotsHolder.GetComponentsInChildren<InventorySlotBase>();
 
-
     }
 
     private void OnEnable()

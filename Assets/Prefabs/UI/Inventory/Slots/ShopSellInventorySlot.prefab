@@ -159,6 +159,16 @@ PrefabInstance:
       objectReference: {fileID: 1070450840184422052}
     - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
         type: 3}
+      propertyPath: _buyAudioKey
+      value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
+        type: 3}
+      propertyPath: _sellAudioKey
+      value: Sell
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895940738541538483, guid: 98878b5ee1dfaf4418298dcdbb6065b5,
+        type: 3}
       propertyPath: _notEnoughtMoneyColor.b
       value: 0.19607845
       objectReference: {fileID: 0}

@@ -1,11 +1,17 @@
 using UnityEngine;
 
+[RequireComponent(typeof(AudioUser))]
 public abstract class Interactable : MonoBehaviour
 {
     #region Variables
+    [SerializeField] protected AudioUser _audio;
     #endregion
 
     #region Unity Methods
+    private void Awake()
+    {
+        _audio = GetComponent<AudioUser>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

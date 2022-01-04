@@ -28,6 +28,9 @@ public class UIManager : SingletonBase<UIManager>
 
     private bool _playerInteractIconWasEnabled;
 
+    private GameObject _exitGameButton;
+
+
     #endregion
 
     #region Events
@@ -53,7 +56,9 @@ public class UIManager : SingletonBase<UIManager>
         {
             _playerInventoryUI.SetActive(true);
             _playerInventoryButtonUI.SetActive(false);
+            _exitGameButton.SetActive(false);
             _playerInventoryIsOpen = true;
+            AudioManager.Instance.TurnVolumeDown();
             InventoryOpened();
             CheckInteractionIcon();
         }
@@ -76,7 +81,9 @@ public class UIManager : SingletonBase<UIManager>
         }
 
         _playerInventoryButtonUI.SetActive(true);
+        _exitGameButton.SetActive(true);
         _playerInventoryIsOpen = false;
+        AudioManager.Instance.TurnVolumeUp();
         CameraManager.Instance.ChangeToPlayerCam();
         ReenableInteractionIcon();
         PlayerManager.Instance.EnableMovement();
@@ -89,6 +96,8 @@ public class UIManager : SingletonBase<UIManager>
         _shopInventoryUI.SetActive(true);
         _shopIsOpen = true;
         _playerInventoryButtonUI.SetActive(false);
+        _exitGameButton.SetActive(false);
+        AudioManager.Instance.TurnVolumeDown();
         CheckInteractionIcon();
         PlayerManager.Instance.DisableMovement();
         
@@ -110,7 +119,9 @@ public class UIManager : SingletonBase<UIManager>
         }
 
         _playerInventoryButtonUI.SetActive(true);
+        _exitGameButton.SetActive(true);
         _shopIsOpen = false;
+        AudioManager.Instance.TurnVolumeUp();
         ReenableInteractionIcon();
         PlayerManager.Instance.EnableMovement();
     }
@@ -181,6 +192,11 @@ public class UIManager : SingletonBase<UIManager>
     public void SetPlayerInteractionIcon(GameObject playerInteractionIcon)
     {
         _playerInteractIcon = playerInteractionIcon;
+    }
+
+    public void SetExitGameButton(GameObject exitButton)
+    {
+        _exitGameButton = exitButton;
     }
 
     #endregion

@@ -14,7 +14,13 @@ public class ShopInventorySlot : InventorySlotBase
     [SerializeField]
     private Color _notEnoughtMoneyColor; 
     [SerializeField]
-    private Color _enoughtMoneyColor; 
+    private Color _enoughtMoneyColor;
+
+    [Header("Buttons audio references")]
+    [SerializeField] private AudioUser _audio;
+
+    [SerializeField] private string _buyAudioKey;
+    [SerializeField] private string _sellAudioKey;
 
     #endregion
 
@@ -62,8 +68,8 @@ public class ShopInventorySlot : InventorySlotBase
 
             if (itemSold)
             {
+                _audio.PlayUserAudio(_sellAudioKey);
                 CurrencyManager.Instance.AddMoney(item.price);
-
                 PlayerInventory.Instance.RemoveItem(item);
             }
 
@@ -81,8 +87,8 @@ public class ShopInventorySlot : InventorySlotBase
 
                 if (itemBought)
                 {
+                    _audio.PlayUserAudio(_buyAudioKey);
                     CurrencyManager.Instance.RemoveMoney(item.price);
-
                     _shopInventory.RemoveItem(item);
                 }
 

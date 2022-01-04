@@ -7,7 +7,8 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public int price = 0;
     public ItemTypes itemType;
-
+    public AudioInfo equipAudioInfo;
+    public AudioInfo unequipAudioInfo;
 
     public virtual void UseItem()
     {
@@ -17,10 +18,8 @@ public class Item : ScriptableObject
     public virtual void RemoveItem()
     {
         Debug.Log($"Item {name} removed.");
-    }
-    
+    }    
 }
-
 
 #region Enum item types
 public enum ItemTypes

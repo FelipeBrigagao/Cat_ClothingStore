@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerReferencesSetter : MonoBehaviour
+public class PlayerUIReferencesSetter : MonoBehaviour
 {
     #region Variables
     [Header("References")]
@@ -18,18 +18,19 @@ public class PlayerReferencesSetter : MonoBehaviour
     private Text _moneyUI;
 
     [SerializeField]
-    private GameObject _currentPlayer;
+    private GameObject _exitGameButtonUI;
+
     #endregion
 
 
     #region Unity Methods
     private void Awake()
     {
-        SetCurrentPlayer();
         SetPlayerInventoryUI();
         SetPlayerInventoryButtonUI();
         SetMoneyUI();
         SetPlayerInteractionIcon();
+        SetExitGameButtonUI();
     }
 
     #endregion
@@ -46,11 +47,6 @@ public class PlayerReferencesSetter : MonoBehaviour
 
     }
 
-    private void SetCurrentPlayer()
-    {
-        PlayerManager.Instance.SetCurrentPlayer(_currentPlayer);
-    }
-
     private void SetMoneyUI()
     {
         UIManager.Instance.SetMoneyUI(_moneyUI);
@@ -62,5 +58,10 @@ public class PlayerReferencesSetter : MonoBehaviour
         UIManager.Instance.SetPlayerInteractionIcon(_playerInteractIcon);
     }
 
+    private void SetExitGameButtonUI()
+    {
+        UIManager.Instance.SetExitGameButton(_exitGameButtonUI);
+
+    }
     #endregion
 }
