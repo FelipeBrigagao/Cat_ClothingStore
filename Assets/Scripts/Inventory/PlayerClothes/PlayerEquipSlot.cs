@@ -10,7 +10,11 @@ public class PlayerEquipSlot : InventorySlotBase
     #region Methods
     public void RemoveItemFromSlot()
     {
-        item.RemoveItem();
+        if(item != null)
+        {
+            _audio.PlayUserAudio($"Unequip {item.itemType}");
+            item.RemoveItem();
+        }
     }
     #endregion
 }

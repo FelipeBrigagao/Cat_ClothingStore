@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PlayerInventorySlot : InventorySlotBase
 {
@@ -14,9 +17,11 @@ public class PlayerInventorySlot : InventorySlotBase
 
         if (item != null)
         {
+            _audio.PlayUserAudio($"Equip {item.itemType}");
             item.UseItem();
         }
     }
+
 
     #endregion
 }

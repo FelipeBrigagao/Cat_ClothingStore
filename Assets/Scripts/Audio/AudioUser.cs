@@ -38,7 +38,7 @@ public class AudioUser : MonoBehaviour
     {
         if (_audioDictionary.ContainsKey(key))
         {
-            Debug.Log($"Audio {key} already is on the dictionary.");
+            Debug.Log($"Audio {key} already on the dictionary.");
             return;
         }
         _audioDictionary.Add(key, audio);

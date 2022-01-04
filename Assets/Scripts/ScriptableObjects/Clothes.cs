@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Clothes")]
 public class Clothes : Item
 {

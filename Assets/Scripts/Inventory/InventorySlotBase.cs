@@ -10,6 +10,8 @@ public class InventorySlotBase : MonoBehaviour
 
     protected Item item;
 
+    [Header("Buttons audio references")]
+    [SerializeField] protected AudioUser _audio;
     #endregion
 
 
@@ -37,6 +39,11 @@ public class InventorySlotBase : MonoBehaviour
     public virtual void Use()
     {
 
+    }
+
+    public void SetAudioInstance(AudioUser audioUser)
+    {
+        _audio = audioUser;
     }
 
     #endregion

@@ -7,8 +7,6 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public int price = 0;
     public ItemTypes itemType;
-    public AudioInfo equipAudioInfo;
-    public AudioInfo unequipAudioInfo;
 
     public virtual void UseItem()
     {
@@ -26,6 +24,5 @@ public enum ItemTypes
 {
     CLOTHING,
     WEAPON
-
 }
 #endregion

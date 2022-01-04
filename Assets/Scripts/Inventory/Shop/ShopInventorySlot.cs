@@ -17,7 +17,6 @@ public class ShopInventorySlot : InventorySlotBase
     private Color _enoughtMoneyColor;
 
     [Header("Buttons audio references")]
-    [SerializeField] private AudioUser _audio;
 
     [SerializeField] private string _buyAudioKey;
     [SerializeField] private string _sellAudioKey;
@@ -102,5 +101,7 @@ public class ShopInventorySlot : InventorySlotBase
     {
         _shopInventory = shopInventory;
     }
+
+    
     #endregion
 }

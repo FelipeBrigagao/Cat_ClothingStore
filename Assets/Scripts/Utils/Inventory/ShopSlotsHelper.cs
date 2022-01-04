@@ -12,6 +12,9 @@ public class ShopSlotsHelper : MonoBehaviour
     [SerializeField]
     private ShopInventory _shopInventory;
 
+    [SerializeField]
+    private AudioUser _audio;
+
     #endregion
 
     #region Unity Methods
@@ -31,6 +34,7 @@ public class ShopSlotsHelper : MonoBehaviour
         foreach(ShopInventorySlot slot in slots)
         {
             slot.SetShopInventoryInstance(_shopInventory);
+            slot.SetAudioInstance(_audio);
         }
     }
 
